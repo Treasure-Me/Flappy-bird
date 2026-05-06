@@ -21,7 +21,7 @@ gdjs.Flappy_45bird_45styleCode.GDGameOverObjects2= [];
 
 gdjs.Flappy_45bird_45styleCode.mapOfGDgdjs_9546Flappy_959545bird_959545styleCode_9546GDBirdObjects1Objects = Hashtable.newFrom({"Bird": gdjs.Flappy_45bird_45styleCode.GDBirdObjects1});
 gdjs.Flappy_45bird_45styleCode.mapOfGDgdjs_9546Flappy_959545bird_959545styleCode_9546GDTileset_95959595Piece_9595959513Objects1Objects = Hashtable.newFrom({"Tileset_Piece_13": gdjs.Flappy_45bird_45styleCode.GDTileset_9595Piece_959513Objects1});
-gdjs.Flappy_45bird_45styleCode.userFunc0x995a08 = function GDJSInlineCode(runtimeScene) {
+gdjs.Flappy_45bird_45styleCode.userFunc0xab4e20 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 const finalScore = runtimeScene.getGame().getVariables().get("PlayerScore").getAsNumber();
 console.log("Crash Score:", finalScore);
@@ -36,14 +36,14 @@ gdjs.Flappy_45bird_45styleCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Flappy_45bird_45styleCode.userFunc0x995a08(runtimeScene);
+gdjs.Flappy_45bird_45styleCode.userFunc0xab4e20(runtimeScene);
 
 }
 
 
 };gdjs.Flappy_45bird_45styleCode.mapOfGDgdjs_9546Flappy_959545bird_959545styleCode_9546GDTileset_95959595Piece_9595959513Objects1Objects = Hashtable.newFrom({"Tileset_Piece_13": gdjs.Flappy_45bird_45styleCode.GDTileset_9595Piece_959513Objects1});
 gdjs.Flappy_45bird_45styleCode.mapOfGDgdjs_9546Flappy_959545bird_959545styleCode_9546GDTileset_95959595Piece_9595959513Objects1Objects = Hashtable.newFrom({"Tileset_Piece_13": gdjs.Flappy_45bird_45styleCode.GDTileset_9595Piece_959513Objects1});
-gdjs.Flappy_45bird_45styleCode.userFunc0xb641d0 = function GDJSInlineCode(runtimeScene) {
+gdjs.Flappy_45bird_45styleCode.userFunc0x8b4d90 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 const finalScore = runtimeScene.getVariables().get("PlayerScore").getAsNumber();
 console.log(finalScore);
@@ -53,14 +53,14 @@ gdjs.Flappy_45bird_45styleCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Flappy_45bird_45styleCode.userFunc0xb641d0(runtimeScene);
+gdjs.Flappy_45bird_45styleCode.userFunc0x8b4d90(runtimeScene);
 
 }
 
 
 };gdjs.Flappy_45bird_45styleCode.mapOfGDgdjs_9546Flappy_959545bird_959545styleCode_9546GDBlackSquareDecoratedButtonObjects1Objects = Hashtable.newFrom({"BlackSquareDecoratedButton": gdjs.Flappy_45bird_45styleCode.GDBlackSquareDecoratedButtonObjects1});
 gdjs.Flappy_45bird_45styleCode.mapOfGDgdjs_9546Flappy_959545bird_959545styleCode_9546GDHomeButtonObjects1Objects = Hashtable.newFrom({"HomeButton": gdjs.Flappy_45bird_45styleCode.GDHomeButtonObjects1});
-gdjs.Flappy_45bird_45styleCode.userFunc0xa517b0 = function GDJSInlineCode(runtimeScene) {
+gdjs.Flappy_45bird_45styleCode.userFunc0x9171b8 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 window.top.location.href = "https://flappy-bird-egg-studios-30289.bubbleapps.io/version-test/api/1.1/mobile/preview?debug_mode=true&preview_view=Home";
 };
@@ -69,7 +69,7 @@ gdjs.Flappy_45bird_45styleCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.Flappy_45bird_45styleCode.userFunc0xa517b0(runtimeScene);
+gdjs.Flappy_45bird_45styleCode.userFunc0x9171b8(runtimeScene);
 
 }
 
@@ -139,7 +139,7 @@ gdjs.copyArray(runtimeScene.getObjects("Bird"), gdjs.Flappy_45bird_45styleCode.G
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "spawn_pipe") >= 2;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "spawn_pipe") >= runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber();
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "PipeGeneration", gdjs.evtTools.camera.getCameraBorderRight(runtimeScene, "", 0), gdjs.evtTools.camera.getCameraBorderTop(runtimeScene, "", 0) + gdjs.randomInRange(-(7) * 32, 7 * 32), 0);
 }
@@ -160,7 +160,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Flappy_45bird_45styleCode.mapOfGDgdjs_9546Flappy_959545bird_959545styleCode_9546GDBirdObjects1Objects, gdjs.Flappy_45bird_45styleCode.mapOfGDgdjs_9546Flappy_959545bird_959545styleCode_9546GDTileset_95959595Piece_9595959513Objects1Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10238620);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10695764);
 }
 }
 if (isConditionTrue_0) {
@@ -172,6 +172,8 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.sound.stopMusicOnChannel(runtimeScene, 1);
 }
 {gdjs.evtTools.camera.showLayer(runtimeScene, "GameOverLayer");
+}
+{gdjs.evtTools.runtimeScene.setTimeScale(runtimeScene, 0);
 }
 
 { //Subevents
@@ -248,6 +250,31 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.Flappy_45bird_45styleCode.eventsList2(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.evtTools.common.mod(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)), 10) == 0);
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() > 0);
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10157780);
+}
+}
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber() + 0.4);
+}
 }
 
 }
