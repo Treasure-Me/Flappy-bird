@@ -21,7 +21,7 @@ gdjs.Flappy_45bird_45styleCode.GDGameOverObjects2= [];
 
 gdjs.Flappy_45bird_45styleCode.mapOfGDgdjs_9546Flappy_959545bird_959545styleCode_9546GDBirdObjects1Objects = Hashtable.newFrom({"Bird": gdjs.Flappy_45bird_45styleCode.GDBirdObjects1});
 gdjs.Flappy_45bird_45styleCode.mapOfGDgdjs_9546Flappy_959545bird_959545styleCode_9546GDTileset_95959595Piece_9595959513Objects1Objects = Hashtable.newFrom({"Tileset_Piece_13": gdjs.Flappy_45bird_45styleCode.GDTileset_9595Piece_959513Objects1});
-gdjs.Flappy_45bird_45styleCode.userFunc0xab4ab8 = function GDJSInlineCode(runtimeScene) {
+gdjs.Flappy_45bird_45styleCode.userFunc0xb726d0 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 const finalScore = runtimeScene.getGame().getVariables().get("PlayerScore").getAsNumber();
 console.log("Crash Score:", finalScore);
@@ -36,14 +36,14 @@ gdjs.Flappy_45bird_45styleCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Flappy_45bird_45styleCode.userFunc0xab4ab8(runtimeScene);
+gdjs.Flappy_45bird_45styleCode.userFunc0xb726d0(runtimeScene);
 
 }
 
 
 };gdjs.Flappy_45bird_45styleCode.mapOfGDgdjs_9546Flappy_959545bird_959545styleCode_9546GDTileset_95959595Piece_9595959513Objects1Objects = Hashtable.newFrom({"Tileset_Piece_13": gdjs.Flappy_45bird_45styleCode.GDTileset_9595Piece_959513Objects1});
 gdjs.Flappy_45bird_45styleCode.mapOfGDgdjs_9546Flappy_959545bird_959545styleCode_9546GDTileset_95959595Piece_9595959513Objects1Objects = Hashtable.newFrom({"Tileset_Piece_13": gdjs.Flappy_45bird_45styleCode.GDTileset_9595Piece_959513Objects1});
-gdjs.Flappy_45bird_45styleCode.userFunc0x8b7bb0 = function GDJSInlineCode(runtimeScene) {
+gdjs.Flappy_45bird_45styleCode.userFunc0x8e5898 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 const finalScore = runtimeScene.getVariables().get("PlayerScore").getAsNumber();
 console.log(finalScore);
@@ -53,14 +53,14 @@ gdjs.Flappy_45bird_45styleCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Flappy_45bird_45styleCode.userFunc0x8b7bb0(runtimeScene);
+gdjs.Flappy_45bird_45styleCode.userFunc0x8e5898(runtimeScene);
 
 }
 
 
 };gdjs.Flappy_45bird_45styleCode.mapOfGDgdjs_9546Flappy_959545bird_959545styleCode_9546GDBlackSquareDecoratedButtonObjects1Objects = Hashtable.newFrom({"BlackSquareDecoratedButton": gdjs.Flappy_45bird_45styleCode.GDBlackSquareDecoratedButtonObjects1});
 gdjs.Flappy_45bird_45styleCode.mapOfGDgdjs_9546Flappy_959545bird_959545styleCode_9546GDHomeButtonObjects1Objects = Hashtable.newFrom({"HomeButton": gdjs.Flappy_45bird_45styleCode.GDHomeButtonObjects1});
-gdjs.Flappy_45bird_45styleCode.userFunc0x95d950 = function GDJSInlineCode(runtimeScene) {
+gdjs.Flappy_45bird_45styleCode.userFunc0x9ecdc8 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 window.top.location.href = "https://flappy-bird-egg-studios-30289.bubbleapps.io/version-test/api/1.1/mobile/preview?debug_mode=true&preview_view=Home";
 };
@@ -69,7 +69,7 @@ gdjs.Flappy_45bird_45styleCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.Flappy_45bird_45styleCode.userFunc0x95d950(runtimeScene);
+gdjs.Flappy_45bird_45styleCode.userFunc0x9ecdc8(runtimeScene);
 
 }
 
@@ -281,7 +281,7 @@ isConditionTrue_0 = false;
 }
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber() + 0.4);
+{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber() - 0.2);
 }
 }
 
